@@ -1,0 +1,32 @@
+[
+  {
+    "id": "moraqmen-crm",
+    "title": "Moraqmen CRM",
+    "tagline": "Custom automated WhatsApp CRM for lead management. Seamlessly routes meta ads leads directly to agent conversation lists.",
+    "techStack": ["React", "Node.js", "WhatsApp API"],
+    "category": "CRM System",
+    "liveLink": null,
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDGMqhmVA9TMyKUZMVVSpBRiVsfU7dHI_b7jxGidWtmydMRthGpMU4nYVTUI9hu5vgboJj9WYmsEUKN39n1vuawBnJvd3-NOy9QWKgviZ7ZLKUbaWtxRGbb9opO5a-z6QBvaTGsrZZOuFBPFtNCvzRR3L7Axmr9Z0cz7nK7kTyJktLCWfOao7MMy1OR37octwq-EEN6ndXqu2iziWB_MGev6pA1ViEDuZOGlVxCUGgFy3y86JeeaPrGXQ",
+    "theme": "primary"
+  },
+  {
+    "id": "mithaq",
+    "title": "Mithaq Life",
+    "tagline": "Matchmaking application designed with React Native for high-performance mobile UX, utilizing a secure WordPress custom backend.",
+    "techStack": ["React Native", "WordPress", "PHP"],
+    "category": "Mobile App",
+    "liveLink": "https://mithaq.life",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCmqxBdhnb65qtrrIOPueB2fsW3VslMMgMFeXi-Al6nJffPHP_rXctRTNN4CIqmU50VKwGVxL53XVsrLqp2gKg0-DR5uM9-D_4bCDN-Ak_BROw0NL5MFHpdQiQxZJ6-wLAs7uQfhF-CJ1PENPV2nrS9LRsWv3Wzd1r_HZDOLS6wRuH7lBeLZnmrU_sCftd5qgAQOsWu5giMGtyp0N-Y52URYLxEDqNOXtcb-jqTgqhk2T_osklP8H5cTQ",
+    "theme": "secondary"
+  },
+  {
+    "id": "sho9",
+    "title": "Sho9 Salla Store",
+    "tagline": "Highly customized e-commerce Salla store optimized for speed, visual appeal, and smooth checkouts to scale up store sales.",
+    "techStack": ["Salla Custom CSS", "JavaScript", "E-commerce UX"],
+    "category": "E-Commerce",
+    "liveLink": "https://sho9.com",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZ2J32hsQ4JGiQr_slU6mbHAgbwMjVHRUEqGleQu87JpAcU6uPDMOmk0Ak4yU37653yTiKRz1G2dtnYNK3ygw7Ni5p0Px0-khsTSatqqwcCwkZam9hfSRMXy7Je_PSzt6JMtXR4brTkmRAX9t8gZrsSnnjOd2MKCB0ueIcn_Bw_YGc1Na3dFPf0Tk29BYAzV0mCYmTiKvvQFs3n4sJ6hrpjII0TauCAJwF6abDc3RI6sXW8pu2oZEfgg",
+    "theme": "primary"
+  }
+]
