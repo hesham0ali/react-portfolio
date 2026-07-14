@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { MessageSquare, Download, CheckCircle, Send } from 'lucide-react';
 
 const CONTACT_FORM_ACTION = "https://formspree.io/f/PLACEHOLDER_FORM_ID"; 
-const WHATSAPP_MESSAGE_URL = "https://wa.me/966500000000"; // Replace with actual WhatsApp link
+const WHATSAPP_MESSAGE_URL = "https://wa.me/201121408868";
 
 export default function Contact({ cvDownloadUrl }) {
   const [formData, setFormData] = useState({ name: '', email: '', project: '' });
