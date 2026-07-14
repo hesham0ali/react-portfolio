@@ -5,9 +5,8 @@ import Services from './components/Services';
 import SelectedWorks from './components/SelectedWorks';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import MoraqmenCaseStudy from './components/MoraqmenCaseStudy';
-import MithaqCaseStudy from './components/MithaqCaseStudy';
-import Sho9CaseStudy from './components/Sho9CaseStudy';
+import CaseStudy from './components/CaseStudy';
+import projectsData from './data/projects.json';
 
 const CV_DOWNLOAD_URL = "/heshamCV.pdf"; 
 
@@ -32,6 +31,8 @@ export default function App() {
     }
   };
 
+  const activeProject = projectsData.find(p => p.id === currentView);
+
   return (
     <div className="mesh-bg min-h-screen text-on-surface bg-background flex flex-col font-sans select-text">
       
@@ -43,26 +44,20 @@ export default function App() {
       />
 
       <main className="flex-grow z-10 relative">
-        {currentView === 'home' && (
+        {currentView === 'home' ? (
           <>
             <Hero navigateToSection={navigateToSection} />
             <Services />
             <SelectedWorks setCurrentView={setCurrentView} />
             <Contact cvDownloadUrl={CV_DOWNLOAD_URL} />
           </>
-        )}
-
-        {currentView === 'moraqmen-crm' && (
-          <MoraqmenCaseStudy setCurrentView={setCurrentView} navigateToSection={navigateToSection} />
-        )}
-
-        {currentView === 'mithaq' && (
-          <MithaqCaseStudy setCurrentView={setCurrentView} navigateToSection={navigateToSection} />
-        )}
-
-        {currentView === 'sho9' && (
-          <Sho9CaseStudy setCurrentView={setCurrentView} navigateToSection={navigateToSection} />
-        )}
+        ) : activeProject ? (
+          <CaseStudy 
+            project={activeProject} 
+            setCurrentView={setCurrentView} 
+            navigateToSection={navigateToSection} 
+          />
+        ) : null}
       </main>
 
       <Footer />

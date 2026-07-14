@@ -7,7 +7,49 @@
     "category": "CRM System",
     "liveLink": null,
     "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDGMqhmVA9TMyKUZMVVSpBRiVsfU7dHI_b7jxGidWtmydMRthGpMU4nYVTUI9hu5vgboJj9WYmsEUKN39n1vuawBnJvd3-NOy9QWKgviZ7ZLKUbaWtxRGbb9opO5a-z6QBvaTGsrZZOuFBPFtNCvzRR3L7Axmr9Z0cz7nK7kTyJktLCWfOao7MMy1OR37octwq-EEN6ndXqu2iziWB_MGev6pA1ViEDuZOGlVxCUGgFy3y86JeeaPrGXQ",
-    "theme": "primary"
+    "theme": "primary",
+    "details": {
+      "client": "Moraqmen CRM",
+      "role": "Full-Stack Lead",
+      "timeline": "3 Months",
+      "headerDesc": "How we automated lead routing and cut client response time by 99% using Meta Webhooks and WhatsApp Cloud API integration.",
+      "problem": [
+        "Moraqmen's sales team was drowning in manual data entry. Every time a new lead submitted a form via Meta Ads (Facebook/Instagram), an agent had to manually copy the lead's phone number, save it to their phone, and initiate a WhatsApp conversation.",
+        "This manual process took an average of 4-6 hours per lead, drastically reducing conversion rates as leads went cold. They needed a system to capture leads instantly and connect them with available sales agents immediately via WhatsApp."
+      ],
+      "architectureDesc": "I architected a custom CRM middleware that sits directly between Meta's infrastructure and the client's sales team.",
+      "architecture": [
+        {
+          "icon": "Terminal",
+          "title": "01. Webhook Intake",
+          "desc": "A highly available Node.js endpoint securely receives and verifies instant webhook payloads from Meta Lead Ads.",
+          "theme": "primary"
+        },
+        {
+          "icon": "Users",
+          "title": "02. WhatsApp Cloud",
+          "desc": "Integration with WhatsApp Business API automatically sends a personalized greeting template to the lead within seconds.",
+          "theme": "secondary"
+        },
+        {
+          "icon": "Clock",
+          "title": "03. Agent Routing",
+          "desc": "Smart agent assignment algorithms route active incoming conversations to logged-in agents' dashboards immediately.",
+          "theme": "primary"
+        }
+      ],
+      "technicalImplementation": [
+        "Frontend: Clean single-page admin panel built with React, styled with Tailwind CSS, and optimized for quick updates.",
+        "Backend: Node.js Express server handling incoming webhooks from Meta, validating payload hashes, and routing data.",
+        "Database: PostgreSQL with relational models to track agent load, leads status, and template statistics."
+      ],
+      "businessImpact": [
+        { "value": "< 2 Min", "label": "Average response time", "theme": "primary" },
+        { "value": "+ 35%", "label": "Lead engagement rate", "theme": "secondary" },
+        { "value": "100%", "label": "Lead allocation automated", "theme": "primary" },
+        { "value": "Zero", "label": "Leads lost or missed", "theme": "secondary" }
+      ]
+    }
   },
   {
     "id": "mithaq",
@@ -17,7 +59,49 @@
     "category": "Mobile App",
     "liveLink": "https://mithaq.life",
     "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCmqxBdhnb65qtrrIOPueB2fsW3VslMMgMFeXi-Al6nJffPHP_rXctRTNN4CIqmU50VKwGVxL53XVsrLqp2gKg0-DR5uM9-D_4bCDN-Ak_BROw0NL5MFHpdQiQxZJ6-wLAs7uQfhF-CJ1PENPV2nrS9LRsWv3Wzd1r_HZDOLS6wRuH7lBeLZnmrU_sCftd5qgAQOsWu5giMGtyp0N-Y52URYLxEDqNOXtcb-jqTgqhk2T_osklP8H5cTQ",
-    "theme": "secondary"
+    "theme": "secondary",
+    "details": {
+      "client": "Mithaq Life",
+      "role": "React Native Developer",
+      "timeline": "6 Months",
+      "headerDesc": "A modern, high-performance matchmaking app built with React Native for seamless user experiences, backed by a robust WordPress architecture.",
+      "problem": [
+        "The client had a legacy matchmaking system that was slow, unresponsive, and lacked a mobile-first approach. Users struggled with complex navigation and slow load times.",
+        "They required a complete overhaul: transitioning to a native mobile experience while safely migrating user profiles and matchmaking data to a secure REST API backend."
+      ],
+      "architectureDesc": "We bridged a modern React Native frontend with a highly customized WordPress CMS backend.",
+      "architecture": [
+        {
+          "icon": "Smartphone",
+          "title": "01. Mobile UX Design",
+          "desc": "Built from the ground up for smooth animations and instant feedback across both iOS and Android platforms.",
+          "theme": "secondary"
+        },
+        {
+          "icon": "Server",
+          "title": "02. WP REST API",
+          "desc": "Leveraging a heavily customized WordPress REST API for content management and JWT-based user authentication.",
+          "theme": "primary"
+        },
+        {
+          "icon": "Shield",
+          "title": "03. Secure Matchmaking",
+          "desc": "Implemented strict privacy controls, end-to-end encryption for chat, and strict data handling.",
+          "theme": "secondary"
+        }
+      ],
+      "technicalImplementation": [
+        "Frontend: React Native and Expo for a unified codebase, employing Reanimated for fluid 60fps micro-interactions.",
+        "Backend: WordPress Headless Architecture with heavily customized PHP plugins replacing standard theme logic.",
+        "State Management: Redux Toolkit for caching complex user profiles and matchmaking algorithms."
+      ],
+      "businessImpact": [
+        { "value": "10k+", "label": "Active Users", "theme": "secondary" },
+        { "value": "4.8", "label": "App Store Rating", "theme": "primary" },
+        { "value": "-40%", "label": "Bounce Rate", "theme": "secondary" },
+        { "value": "Fast", "label": "Time to First Match", "theme": "primary" }
+      ]
+    }
   },
   {
     "id": "sho9",
@@ -27,6 +111,48 @@
     "category": "E-Commerce",
     "liveLink": "https://sho9.com",
     "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZ2J32hsQ4JGiQr_slU6mbHAgbwMjVHRUEqGleQu87JpAcU6uPDMOmk0Ak4yU37653yTiKRz1G2dtnYNK3ygw7Ni5p0Px0-khsTSatqqwcCwkZam9hfSRMXy7Je_PSzt6JMtXR4brTkmRAX9t8gZrsSnnjOd2MKCB0ueIcn_Bw_YGc1Na3dFPf0Tk29BYAzV0mCYmTiKvvQFs3n4sJ6hrpjII0TauCAJwF6abDc3RI6sXW8pu2oZEfgg",
-    "theme": "primary"
+    "theme": "primary",
+    "details": {
+      "client": "Sho9 Store",
+      "role": "Frontend / UX Developer",
+      "timeline": "1 Month",
+      "headerDesc": "A high-converting, visually striking Salla e-commerce store with fully customized styling and an optimized user flow.",
+      "problem": [
+        "The standard Salla templates were rigid and didn't convey the premium aesthetic the brand required. Their checkout flow was cluttered, causing a high drop-off rate.",
+        "We needed to push the limits of Salla's Custom CSS and JS injections to create a bespoke shopping experience without losing the platform's reliable backend functionality."
+      ],
+      "architectureDesc": "By leveraging Salla's advanced theme engine, we implemented massive styling overhauls and injected custom scripts to optimize flow.",
+      "architecture": [
+        {
+          "icon": "Palette",
+          "title": "01. Visual Overhaul",
+          "desc": "Overhauled the default theme to align with brand identity, ensuring a premium feel with custom typography and spacing.",
+          "theme": "primary"
+        },
+        {
+          "icon": "ShoppingCart",
+          "title": "02. Checkout Flow",
+          "desc": "Streamlined the purchasing process by hiding unnecessary fields and highlighting trust badges, reducing cart abandonment.",
+          "theme": "secondary"
+        },
+        {
+          "icon": "Smartphone",
+          "title": "03. Mobile First",
+          "desc": "Rigorous testing across mobile devices to ensure tap targets and layouts are flawless on smaller screens.",
+          "theme": "primary"
+        }
+      ],
+      "technicalImplementation": [
+        "Styling: Deep CSS overrides using Salla's Custom Theme Editor, ensuring robust fallback variables.",
+        "Scripts: Injected Vanilla JS micro-interactions for a more 'app-like' feel during the browsing phase.",
+        "Performance: Lazy loading implementation and asset optimization to ensure LCP under 2 seconds."
+      ],
+      "businessImpact": [
+        { "value": "+ 45%", "label": "Conversion Rate", "theme": "primary" },
+        { "value": "- 20%", "label": "Cart Abandonment", "theme": "secondary" },
+        { "value": "1.8s", "label": "Load Time", "theme": "primary" },
+        { "value": "2X", "label": "Mobile Sales", "theme": "secondary" }
+      ]
+    }
   }
 ]
