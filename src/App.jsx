@@ -1,0 +1,71 @@
+import React, { useState, useEffect } from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Services from './components/Services';
+import SelectedWorks from './components/SelectedWorks';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import MoraqmenCaseStudy from './components/MoraqmenCaseStudy';
+import MithaqCaseStudy from './components/MithaqCaseStudy';
+import Sho9CaseStudy from './components/Sho9CaseStudy';
+
+const CV_DOWNLOAD_URL = "/heshamCV.pdf"; 
+
+export default function App() {
+  const [currentView, setCurrentView] = useState('home'); 
+
+  // Scroll to top on view change
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }, [currentView]);
+
+  const navigateToSection = (sectionId) => {
+    if (currentView !== 'home') {
+      setCurrentView('home');
+      setTimeout(() => {
+        const el = document.getElementById(sectionId);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 150);
+    } else {
+      const el = document.getElementById(sectionId);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <div className="mesh-bg min-h-screen text-on-surface bg-background flex flex-col font-sans select-text">
+      
+      <Navbar 
+        currentView={currentView} 
+        setCurrentView={setCurrentView} 
+        navigateToSection={navigateToSection} 
+        cvDownloadUrl={CV_DOWNLOAD_URL}
+      />
+
+      <main className="flex-grow z-10 relative">
+        {currentView === 'home' && (
+          <>
+            <Hero navigateToSection={navigateToSection} />
+            <Services />
+            <SelectedWorks setCurrentView={setCurrentView} />
+            <Contact cvDownloadUrl={CV_DOWNLOAD_URL} />
+          </>
+        )}
+
+        {currentView === 'moraqmen-crm' && (
+          <MoraqmenCaseStudy setCurrentView={setCurrentView} navigateToSection={navigateToSection} />
+        )}
+
+        {currentView === 'mithaq' && (
+          <MithaqCaseStudy setCurrentView={setCurrentView} navigateToSection={navigateToSection} />
+        )}
+
+        {currentView === 'sho9' && (
+          <Sho9CaseStudy setCurrentView={setCurrentView} navigateToSection={navigateToSection} />
+        )}
+      </main>
+
+      <Footer />
+    </div>
+  );
+}
