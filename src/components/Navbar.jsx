@@ -17,7 +17,7 @@ export default function Navbar({ currentView, setCurrentView, navigateToSection,
           onClick={() => setCurrentView('home')} 
           className="flex-1 flex justify-start items-center gap-2 focus:outline-none"
         >
-          <img src="/logo.png" alt="Logo" className="h-8 w-auto" />
+          <img src="/logo.svg" alt="Logo" className="h-8 w-auto" />
         </button>
 
         {/* Center: Desktop Links */}
